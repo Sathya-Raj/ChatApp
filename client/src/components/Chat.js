@@ -15,7 +15,7 @@ function Chat() {
   const [room, setroom] = useState("");
   const [messages, setmessages] = useState([]);
   const [message, setmessage] = useState("");
-  const ENDPOINT ="https://git.heroku.com/chattybee.git";
+  const ENDPOINT ="http://localhost:5000/";
   
   useEffect(() => {
     socket=io(ENDPOINT);

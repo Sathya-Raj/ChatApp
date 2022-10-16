@@ -7,7 +7,6 @@ function Message({message:{user,text},name,keyProp}) {
   if (trimmedName===user){
     SentByCurrentUser=true;
   }
-  console.log(user,text,SentByCurrentUser)
 
   return (
     SentByCurrentUser

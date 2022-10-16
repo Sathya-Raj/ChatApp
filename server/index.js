@@ -13,7 +13,7 @@ const server = http.createServer(app);
 app.use(cors());
 const io = new Server(server,{
   cors:{
-    origin: "http://localhost:3000",
+    origin: "https://634baf33d81dce46002fa1e2--chimerical-pavlova-500d35.netlify.app/",
     methods:["GET","POST"],
   },
 });

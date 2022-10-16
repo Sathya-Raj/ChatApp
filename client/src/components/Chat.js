@@ -15,7 +15,7 @@ function Chat() {
   const [room, setroom] = useState("");
   const [messages, setmessages] = useState([]);
   const [message, setmessage] = useState("");
-  const ENDPOINT ="http://localhost:5000/";
+  const ENDPOINT ="https://git.heroku.com/chattybee.git";
   
   useEffect(() => {
     socket=io(ENDPOINT);
@@ -25,9 +25,8 @@ function Chat() {
     socket.emit('join',{name,room},(error)=>{
       console.log(error);
       if (error){
-        
-        window.location.replace("http://localhost:3000/");
         alert(error) ;
+        window.history.back();
         return 
       }
     });

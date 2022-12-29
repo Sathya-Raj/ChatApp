@@ -15,7 +15,7 @@ function Chat() {
   const [room, setroom] = useState("");
   const [messages, setmessages] = useState([]);
   const [message, setmessage] = useState("");
-  const ENDPOINT ="https://chattybee.herokuapp.com/";
+  const ENDPOINT ="https://chatapp-production-3580.up.railway.app/";
   
   useEffect(() => {
     socket=io(ENDPOINT);
